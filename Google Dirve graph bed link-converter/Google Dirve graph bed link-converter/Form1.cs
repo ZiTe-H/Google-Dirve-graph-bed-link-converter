@@ -18,8 +18,6 @@ namespace Google_Dirve_graph_bed_link_converter
         * https://drive.google.com/open?id=1FLHQhNBsVat2K2Tyvn_RPZe7Zm5J2-sg
         */
 
-        string GraphBedLink = "https://drive.google.com/uc?export=[EXPORTLINKTYPE]&id=";
-
         public Form1()
         {
             InitializeComponent();
@@ -31,6 +29,7 @@ namespace Google_Dirve_graph_bed_link_converter
 
         private void ConvertLink()
         {
+            string GraphBedLink = "https://drive.google.com/uc?export=[EXPORTLINKTYPE]&id=";
             string ConvertedLink = tb_LinkImport.Text;
 
             // Import link type
