@@ -17,7 +17,7 @@ namespace Google_Dirve_graph_bed_link_converter
             InitializeComponent();
             
             // Defaulf link type
-            rbtn_ImportLinkType1.Checked = true;
+            rbtn_ImportLinkTypeAuto.Checked = true;
             rbtn_ExportLinkType1.Checked = true;
         }
 
@@ -47,8 +47,17 @@ namespace Google_Dirve_graph_bed_link_converter
                 ConvertedLink = ConvertedLink.Replace("/view?usp=sharing", "");
                 ConvertedLink = ConvertedLink.Replace("https://drive.google.com/file/d/", "https://drive.google.com/uc?export=[EXPORTLINKTYPE]&id=");
             }
-            else
+            else if(rbtn_ImportLinkType1.Checked == true)
             {
+                ConvertedLink = ConvertedLink.Replace("https://drive.google.com/open?id=", "https://drive.google.com/uc?export=[EXPORTLINKTYPE]&id=");
+            }
+            else  // Atuo
+            {
+                // Type 2
+                ConvertedLink = ConvertedLink.Replace("/view?usp=sharing", "");
+                ConvertedLink = ConvertedLink.Replace("https://drive.google.com/file/d/", "https://drive.google.com/uc?export=[EXPORTLINKTYPE]&id=");
+
+                // Type 1
                 ConvertedLink = ConvertedLink.Replace("https://drive.google.com/open?id=", "https://drive.google.com/uc?export=[EXPORTLINKTYPE]&id=");
             }
 

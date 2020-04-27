@@ -38,15 +38,17 @@
             this.gb_ImportLinkType = new System.Windows.Forms.GroupBox();
             this.rbtn_ImportLinkType2 = new System.Windows.Forms.RadioButton();
             this.rbtn_ImportLinkType1 = new System.Windows.Forms.RadioButton();
+            this.rbtn_ImportLinkTypeAuto = new System.Windows.Forms.RadioButton();
             this.gb_ExportLinkType.SuspendLayout();
             this.gb_ImportLinkType.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Convent
             // 
-            this.btn_Convent.Location = new System.Drawing.Point(581, 234);
+            this.btn_Convent.Location = new System.Drawing.Point(775, 312);
+            this.btn_Convent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Convent.Name = "btn_Convent";
-            this.btn_Convent.Size = new System.Drawing.Size(147, 42);
+            this.btn_Convent.Size = new System.Drawing.Size(196, 56);
             this.btn_Convent.TabIndex = 0;
             this.btn_Convent.Text = "Convent";
             this.btn_Convent.UseVisualStyleBackColor = true;
@@ -54,30 +56,33 @@
             // 
             // tb_LinkImport
             // 
-            this.tb_LinkImport.Location = new System.Drawing.Point(12, 12);
+            this.tb_LinkImport.Location = new System.Drawing.Point(16, 16);
+            this.tb_LinkImport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_LinkImport.Multiline = true;
             this.tb_LinkImport.Name = "tb_LinkImport";
             this.tb_LinkImport.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tb_LinkImport.Size = new System.Drawing.Size(553, 96);
+            this.tb_LinkImport.Size = new System.Drawing.Size(736, 127);
             this.tb_LinkImport.TabIndex = 2;
             // 
             // tb_LinkExport
             // 
-            this.tb_LinkExport.Location = new System.Drawing.Point(12, 132);
+            this.tb_LinkExport.Location = new System.Drawing.Point(16, 176);
+            this.tb_LinkExport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_LinkExport.Multiline = true;
             this.tb_LinkExport.Name = "tb_LinkExport";
             this.tb_LinkExport.ReadOnly = true;
             this.tb_LinkExport.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tb_LinkExport.Size = new System.Drawing.Size(553, 96);
+            this.tb_LinkExport.Size = new System.Drawing.Size(736, 127);
             this.tb_LinkExport.TabIndex = 2;
             // 
             // rbtn_ExportLinkType1
             // 
             this.rbtn_ExportLinkType1.AutoSize = true;
             this.rbtn_ExportLinkType1.Checked = true;
-            this.rbtn_ExportLinkType1.Location = new System.Drawing.Point(20, 29);
+            this.rbtn_ExportLinkType1.Location = new System.Drawing.Point(27, 39);
+            this.rbtn_ExportLinkType1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbtn_ExportLinkType1.Name = "rbtn_ExportLinkType1";
-            this.rbtn_ExportLinkType1.Size = new System.Drawing.Size(88, 16);
+            this.rbtn_ExportLinkType1.Size = new System.Drawing.Size(113, 21);
             this.rbtn_ExportLinkType1.TabIndex = 3;
             this.rbtn_ExportLinkType1.TabStop = true;
             this.rbtn_ExportLinkType1.Text = "view (default)";
@@ -87,9 +92,10 @@
             // rbtn_ExportLinkType2
             // 
             this.rbtn_ExportLinkType2.AutoSize = true;
-            this.rbtn_ExportLinkType2.Location = new System.Drawing.Point(20, 60);
+            this.rbtn_ExportLinkType2.Location = new System.Drawing.Point(27, 80);
+            this.rbtn_ExportLinkType2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbtn_ExportLinkType2.Name = "rbtn_ExportLinkType2";
-            this.rbtn_ExportLinkType2.Size = new System.Drawing.Size(69, 16);
+            this.rbtn_ExportLinkType2.Size = new System.Drawing.Size(89, 21);
             this.rbtn_ExportLinkType2.TabIndex = 3;
             this.rbtn_ExportLinkType2.Text = "download";
             this.rbtn_ExportLinkType2.UseVisualStyleBackColor = true;
@@ -99,9 +105,11 @@
             // 
             this.gb_ExportLinkType.Controls.Add(this.rbtn_ExportLinkType2);
             this.gb_ExportLinkType.Controls.Add(this.rbtn_ExportLinkType1);
-            this.gb_ExportLinkType.Location = new System.Drawing.Point(581, 132);
+            this.gb_ExportLinkType.Location = new System.Drawing.Point(775, 176);
+            this.gb_ExportLinkType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gb_ExportLinkType.Name = "gb_ExportLinkType";
-            this.gb_ExportLinkType.Size = new System.Drawing.Size(147, 96);
+            this.gb_ExportLinkType.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gb_ExportLinkType.Size = new System.Drawing.Size(196, 128);
             this.gb_ExportLinkType.TabIndex = 5;
             this.gb_ExportLinkType.TabStop = false;
             this.gb_ExportLinkType.Text = "Export Link Type";
@@ -109,19 +117,23 @@
             // lb_LinkExample
             // 
             this.lb_LinkExample.AutoSize = true;
-            this.lb_LinkExample.Location = new System.Drawing.Point(10, 264);
+            this.lb_LinkExample.Location = new System.Drawing.Point(13, 352);
+            this.lb_LinkExample.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_LinkExample.Name = "lb_LinkExample";
-            this.lb_LinkExample.Size = new System.Drawing.Size(306, 12);
+            this.lb_LinkExample.Size = new System.Drawing.Size(390, 17);
             this.lb_LinkExample.TabIndex = 6;
             this.lb_LinkExample.Text = "結果範例：https://drive.google.com/uc?export=view&id=FILEID";
             // 
             // gb_ImportLinkType
             // 
             this.gb_ImportLinkType.Controls.Add(this.rbtn_ImportLinkType2);
+            this.gb_ImportLinkType.Controls.Add(this.rbtn_ImportLinkTypeAuto);
             this.gb_ImportLinkType.Controls.Add(this.rbtn_ImportLinkType1);
-            this.gb_ImportLinkType.Location = new System.Drawing.Point(581, 12);
+            this.gb_ImportLinkType.Location = new System.Drawing.Point(775, 16);
+            this.gb_ImportLinkType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gb_ImportLinkType.Name = "gb_ImportLinkType";
-            this.gb_ImportLinkType.Size = new System.Drawing.Size(147, 96);
+            this.gb_ImportLinkType.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gb_ImportLinkType.Size = new System.Drawing.Size(196, 128);
             this.gb_ImportLinkType.TabIndex = 5;
             this.gb_ImportLinkType.TabStop = false;
             this.gb_ImportLinkType.Text = "Import Link Type";
@@ -129,9 +141,10 @@
             // rbtn_ImportLinkType2
             // 
             this.rbtn_ImportLinkType2.AutoSize = true;
-            this.rbtn_ImportLinkType2.Location = new System.Drawing.Point(20, 60);
+            this.rbtn_ImportLinkType2.Location = new System.Drawing.Point(27, 80);
+            this.rbtn_ImportLinkType2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbtn_ImportLinkType2.Name = "rbtn_ImportLinkType2";
-            this.rbtn_ImportLinkType2.Size = new System.Drawing.Size(119, 16);
+            this.rbtn_ImportLinkType2.Size = new System.Drawing.Size(141, 21);
             this.rbtn_ImportLinkType2.TabIndex = 3;
             this.rbtn_ImportLinkType2.Text = "取得檔案共用連結";
             this.rbtn_ImportLinkType2.UseVisualStyleBackColor = true;
@@ -140,27 +153,40 @@
             // rbtn_ImportLinkType1
             // 
             this.rbtn_ImportLinkType1.AutoSize = true;
-            this.rbtn_ImportLinkType1.Checked = true;
-            this.rbtn_ImportLinkType1.Location = new System.Drawing.Point(20, 29);
+            this.rbtn_ImportLinkType1.Location = new System.Drawing.Point(27, 51);
+            this.rbtn_ImportLinkType1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbtn_ImportLinkType1.Name = "rbtn_ImportLinkType1";
-            this.rbtn_ImportLinkType1.Size = new System.Drawing.Size(90, 16);
+            this.rbtn_ImportLinkType1.Size = new System.Drawing.Size(57, 21);
             this.rbtn_ImportLinkType1.TabIndex = 3;
-            this.rbtn_ImportLinkType1.TabStop = true;
-            this.rbtn_ImportLinkType1.Text = "共用 (default)";
+            this.rbtn_ImportLinkType1.Text = "共用";
             this.rbtn_ImportLinkType1.UseVisualStyleBackColor = true;
             this.rbtn_ImportLinkType1.CheckedChanged += new System.EventHandler(this.rbtn_LinkType1_CheckedChanged);
             // 
+            // rbtn_ImportLinkTypeAuto
+            // 
+            this.rbtn_ImportLinkTypeAuto.AutoSize = true;
+            this.rbtn_ImportLinkTypeAuto.Checked = true;
+            this.rbtn_ImportLinkTypeAuto.Location = new System.Drawing.Point(27, 23);
+            this.rbtn_ImportLinkTypeAuto.Margin = new System.Windows.Forms.Padding(4);
+            this.rbtn_ImportLinkTypeAuto.Name = "rbtn_ImportLinkTypeAuto";
+            this.rbtn_ImportLinkTypeAuto.Size = new System.Drawing.Size(115, 21);
+            this.rbtn_ImportLinkTypeAuto.TabIndex = 3;
+            this.rbtn_ImportLinkTypeAuto.Text = "Auto (default)";
+            this.rbtn_ImportLinkTypeAuto.UseVisualStyleBackColor = true;
+            this.rbtn_ImportLinkTypeAuto.CheckedChanged += new System.EventHandler(this.rbtn_LinkType1_CheckedChanged);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(739, 287);
+            this.ClientSize = new System.Drawing.Size(985, 383);
             this.Controls.Add(this.lb_LinkExample);
             this.Controls.Add(this.gb_ImportLinkType);
             this.Controls.Add(this.gb_ExportLinkType);
             this.Controls.Add(this.tb_LinkExport);
             this.Controls.Add(this.tb_LinkImport);
             this.Controls.Add(this.btn_Convent);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Google Dirve Graph bed link-converter";
             this.gb_ExportLinkType.ResumeLayout(false);
@@ -184,6 +210,7 @@
         private System.Windows.Forms.GroupBox gb_ImportLinkType;
         private System.Windows.Forms.RadioButton rbtn_ImportLinkType2;
         private System.Windows.Forms.RadioButton rbtn_ImportLinkType1;
+        private System.Windows.Forms.RadioButton rbtn_ImportLinkTypeAuto;
     }
 }
 
