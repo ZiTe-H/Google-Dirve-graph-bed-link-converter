@@ -12,6 +12,9 @@ namespace Google_Dirve_graph_bed_link_converter
 {
     public partial class Form1 : Form
     {
+
+        string GraphBedLink = "https://drive.google.com/uc?export=[EXPORTLINKTYPE]&id=";
+
         public Form1()
         {
             InitializeComponent();
@@ -45,20 +48,20 @@ namespace Google_Dirve_graph_bed_link_converter
             if (rbtn_ImportLinkType2.Checked == true)
             {
                 ConvertedLink = ConvertedLink.Replace("/view?usp=sharing", "");
-                ConvertedLink = ConvertedLink.Replace("https://drive.google.com/file/d/", "https://drive.google.com/uc?export=[EXPORTLINKTYPE]&id=");
+                ConvertedLink = ConvertedLink.Replace("https://drive.google.com/file/d/", GraphBedLink);
             }
             else if(rbtn_ImportLinkType1.Checked == true)
             {
-                ConvertedLink = ConvertedLink.Replace("https://drive.google.com/open?id=", "https://drive.google.com/uc?export=[EXPORTLINKTYPE]&id=");
+                ConvertedLink = ConvertedLink.Replace("https://drive.google.com/open?id=", GraphBedLink);
             }
             else  // Atuo
             {
                 // Type 2
                 ConvertedLink = ConvertedLink.Replace("/view?usp=sharing", "");
-                ConvertedLink = ConvertedLink.Replace("https://drive.google.com/file/d/", "https://drive.google.com/uc?export=[EXPORTLINKTYPE]&id=");
+                ConvertedLink = ConvertedLink.Replace("https://drive.google.com/file/d/", GraphBedLink);
 
                 // Type 1
-                ConvertedLink = ConvertedLink.Replace("https://drive.google.com/open?id=", "https://drive.google.com/uc?export=[EXPORTLINKTYPE]&id=");
+                ConvertedLink = ConvertedLink.Replace("https://drive.google.com/open?id=", GraphBedLink);
             }
 
             // Export link type
