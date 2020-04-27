@@ -12,6 +12,11 @@ namespace Google_Dirve_graph_bed_link_converter
 {
     public partial class Form1 : Form
     {
+        /*
+        * Import link example:
+        * https://drive.google.com/file/d/1FLHQhNBsVat2K2Tyvn_RPZe7Zm5J2-sg/view?usp=sharing
+        * https://drive.google.com/open?id=1FLHQhNBsVat2K2Tyvn_RPZe7Zm5J2-sg
+        */
 
         string GraphBedLink = "https://drive.google.com/uc?export=[EXPORTLINKTYPE]&id=";
 
@@ -24,25 +29,9 @@ namespace Google_Dirve_graph_bed_link_converter
             rbtn_ExportLinkType1.Checked = true;
         }
 
-        private void rbtn_LinkType1_CheckedChanged(object sender, EventArgs e)
-        {
-            lb_LinkExample.Text = @"結果範例：https://drive.google.com/uc?export=view&id=FILEID";
-        }
-
-        private void rbtn_LinkType2_CheckedChanged(object sender, EventArgs e)
-        {
-            lb_LinkExample.Text = @"結果範例：https://drive.google.com/uc?export=download&id=FILEID";
-        }
-
-        private void btn_Convent_Click(object sender, EventArgs e)
+        private void ConvertLink()
         {
             string ConvertedLink = tb_LinkImport.Text;
-
-            /*
-             * Import link example:
-             * https://drive.google.com/file/d/1FLHQhNBsVat2K2Tyvn_RPZe7Zm5J2-sg/view?usp=sharing
-             * https://drive.google.com/open?id=1FLHQhNBsVat2K2Tyvn_RPZe7Zm5J2-sg
-            */
 
             // Import link type
             if (rbtn_ImportLinkType2.Checked == true)
@@ -50,7 +39,7 @@ namespace Google_Dirve_graph_bed_link_converter
                 ConvertedLink = ConvertedLink.Replace("/view?usp=sharing", "");
                 ConvertedLink = ConvertedLink.Replace("https://drive.google.com/file/d/", GraphBedLink);
             }
-            else if(rbtn_ImportLinkType1.Checked == true)
+            else if (rbtn_ImportLinkType1.Checked == true)
             {
                 ConvertedLink = ConvertedLink.Replace("https://drive.google.com/open?id=", GraphBedLink);
             }
@@ -76,6 +65,28 @@ namespace Google_Dirve_graph_bed_link_converter
 
             // Print
             tb_LinkExport.Text = ConvertedLink;
+        }
+
+        private void rbtn_LinkType1_CheckedChanged(object sender, EventArgs e)
+        {
+            ConvertLink();
+            lb_LinkExample.Text = @"結果範例：https://drive.google.com/uc?export=view&id=FILEID";
+        }
+
+        private void rbtn_LinkType2_CheckedChanged(object sender, EventArgs e)
+        {
+            ConvertLink();
+            lb_LinkExample.Text = @"結果範例：https://drive.google.com/uc?export=download&id=FILEID";
+        }
+
+        private void btn_Convent_Click(object sender, EventArgs e)
+        {
+            ConvertLink();
+        }
+
+        private void Tb_LinkImport_TextChanged(object sender, EventArgs e)
+        {
+            ConvertLink();
         }
     }
 }

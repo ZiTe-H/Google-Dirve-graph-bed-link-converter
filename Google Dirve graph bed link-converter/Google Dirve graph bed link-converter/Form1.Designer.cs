@@ -63,6 +63,7 @@
             this.tb_LinkImport.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tb_LinkImport.Size = new System.Drawing.Size(736, 127);
             this.tb_LinkImport.TabIndex = 2;
+            this.tb_LinkImport.TextChanged += new System.EventHandler(this.Tb_LinkImport_TextChanged);
             // 
             // tb_LinkExport
             // 
