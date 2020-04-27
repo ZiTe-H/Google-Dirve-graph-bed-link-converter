@@ -1,0 +1,9 @@
+C:\Users\wk415\Dropbox\1-Project\GoogleDrive圖床網址轉換器\Visual Studio\Google Dirve graph bed link-converter\Google Dirve graph bed link-converter\bin\Debug\Google Dirve graph bed link-converter.exe.config
+C:\Users\wk415\Dropbox\1-Project\GoogleDrive圖床網址轉換器\Visual Studio\Google Dirve graph bed link-converter\Google Dirve graph bed link-converter\bin\Debug\Google Dirve graph bed link-converter.exe
+C:\Users\wk415\Dropbox\1-Project\GoogleDrive圖床網址轉換器\Visual Studio\Google Dirve graph bed link-converter\Google Dirve graph bed link-converter\bin\Debug\Google Dirve graph bed link-converter.pdb
+C:\Users\wk415\Dropbox\1-Project\GoogleDrive圖床網址轉換器\Visual Studio\Google Dirve graph bed link-converter\Google Dirve graph bed link-converter\obj\Debug\Google Dirve graph bed link-converter.csprojAssemblyReference.cache
+C:\Users\wk415\Dropbox\1-Project\GoogleDrive圖床網址轉換器\Visual Studio\Google Dirve graph bed link-converter\Google Dirve graph bed link-converter\obj\Debug\Google_Dirve_graph_bed_link_converter.Form1.resources
+C:\Users\wk415\Dropbox\1-Project\GoogleDrive圖床網址轉換器\Visual Studio\Google Dirve graph bed link-converter\Google Dirve graph bed link-converter\obj\Debug\Google_Dirve_graph_bed_link_converter.Properties.Resources.resources
+C:\Users\wk415\Dropbox\1-Project\GoogleDrive圖床網址轉換器\Visual Studio\Google Dirve graph bed link-converter\Google Dirve graph bed link-converter\obj\Debug\Google Dirve graph bed link-converter.csproj.GenerateResource.cache
+C:\Users\wk415\Dropbox\1-Project\GoogleDrive圖床網址轉換器\Visual Studio\Google Dirve graph bed link-converter\Google Dirve graph bed link-converter\obj\Debug\Google Dirve graph bed link-converter.exe
+C:\Users\wk415\Dropbox\1-Project\GoogleDrive圖床網址轉換器\Visual Studio\Google Dirve graph bed link-converter\Google Dirve graph bed link-converter\obj\Debug\Google Dirve graph bed link-converter.pdb
