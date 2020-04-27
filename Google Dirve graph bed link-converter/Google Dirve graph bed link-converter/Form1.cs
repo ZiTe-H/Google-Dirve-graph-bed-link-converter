@@ -78,11 +78,6 @@ namespace Google_Dirve_graph_bed_link_converter
             lb_LinkExample.Text = @"結果範例：https://drive.google.com/uc?export=download&id=FILEID";
         }
 
-        private void btn_Convent_Click(object sender, EventArgs e)
-        {
-            ConvertLink();
-        }
-
         private void Tb_LinkImport_TextChanged(object sender, EventArgs e)
         {
             ConvertLink();
